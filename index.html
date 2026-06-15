@@ -1,10 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-    <title>Meu site</title>
+    <meta charset="UTF-8">
+    <title>Meu Site</title>
+
+    <style>
+        body {
+            background-color: #c8a2c8; /* lilás */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #8a2be2;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            font-size: 16px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #6a1bbf;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Olá, meu site está no ar! 🚀</h1>
-    <p>Esse site foi criado com GitHub Pages.</p>
+    <div class="container">
+        <h1>Bem-vindo ao meu site 💜</h1>
+        <p>Clique no botão abaixo para acessar outro site:</p>
+
+        <button onclick="irParaSite()">Ir para o site</button>
+    </div>
+
+    <script>
+        function irParaSite() {
+            window.location.href = "https://www.google.com";
+        }
+    </script>
 </body>
 </html>
